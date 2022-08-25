@@ -1,0 +1,107 @@
+.todoForm {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -3.375rem
+}
+
+.todoForm form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.todoForm textarea {
+    background: var(--gray-500);
+
+    border-radius: 8px;
+    width: 100%;
+
+    color: var(--gray-100);
+    line-height: 1.4rem;
+    resize: none;
+    padding: 1rem;
+    border: none;
+
+    max-height: 3.375rem;
+}
+
+.todoForm button[type=submit] {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--blue-dark);
+    align-items: center;
+    padding: 1rem;
+
+    border-radius: 8px;
+    border: none;
+
+
+    color: var(--gray-100);
+    font-weight: bold;
+    line-height: 1.4rem;
+
+    transition: background 0.1s;
+
+    cursor: pointer;
+}
+
+.todoForm button[type=submit]:hover {
+    background: var(--blue);
+}
+
+.todoList {
+    margin-top: 4rem;
+}
+
+.todoListHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoListTotalCounter {
+    color: var(--blue);
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.todoListTotalCounter span {
+    background: var(--gray-400);
+    margin-left: 0.5rem;
+
+    font-size: 0.75rem;
+    color: var(--gray-200);
+
+    padding: 0 0.5rem;
+
+    border-radius: 999px;
+}
+
+.todoListCompletedCounter {
+    color: var(--purple);
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.todoListCompletedCounter span {
+    background: var(--gray-400);
+    margin-left: 0.5rem;
+
+    font-size: 0.75rem;
+    color: var(--gray-200);
+
+    padding: 0 0.5rem;
+
+    border-radius: 999px;
+}
+
+.todoListContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+
+    margin-top: 1.5rem;
+}

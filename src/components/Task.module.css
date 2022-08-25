@@ -1,0 +1,84 @@
+.taskContainer {
+    background: var(--gray-500);
+    min-height: 4.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+    display: flex;
+    gap: 0.75rem;
+
+    align-items: flex-start;
+}
+
+.taskContainer input[type="checkbox"] {
+    display: block;
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    transition: background-color 0.1s, border-color 0.1s;
+}
+
+.taskContainer input[type="checkbox"]:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--blue-dark);
+}
+
+.taskContainer input[type="checkbox"]:hover {
+    background: var(--blue-dark-opacity)
+}
+
+.taskContainer input[type="checkbox"]:checked {
+    background: url('../assets/Vector.svg') center no-repeat;
+    background-color: var(--purple-dark);
+    border-color: var(--purple-dark);
+}
+
+.taskContainer input[type="checkbox"]:checked:hover {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+.taskContainer p {
+    width: 100%;
+    font-size: 0.875rem;
+    font-weight: 1.4rem;
+}
+
+.taskContainer button {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 4px;
+    padding: 0.1rem;
+
+    background: transparent;
+
+    color: var(--gray-300);
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.1s;
+}
+
+.taskContainer button:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+}
+
+.taskIncompleted {
+    color: var(--gray-100);
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
